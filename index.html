@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Favourite Game</title>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 	 <!-- font awesome -->
+ 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="	sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+ 	 <!--Import Google Icon Font-->
+ 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	 <!-- Compiled and minified CSS -->
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+ 	<style>
+	.grid-container {
+  	display: grid;
+ 	grid-template-columns: auto auto auto;
+  	position: relative;
+  	top: 50vh;
+  	transform: translate(0,-50%);
+	}
+	.grid-item1,.grid-item2,.grid-item3 {
+  	background-color: rgba(255, 255, 255, 0.8);
+  	border: 3px solid rgba(0, 0, 0, 0.8);
+  	padding: 20px;
+  	font-size: 45px;
+  	text-align: center;
+  	color: yellow;
+	}
+	.grid-item1{
+		background-color: red;
+	}
+	.grid-item2{
+		background-color: blue;
+	}
+	.grid-item3{
+		background-color: green;
+	}
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+</head>
+<body>
+	<h1 id="p"></h1>
+	<div class="row container">
+		<button class="btn yellow right black-text" onclick="swap()">SWAP</button>
+	<div class="grid-container col l6 offset-l3">
+  		<div class="grid-item1" onclick="change(2)">1</div>
+  		<div class="grid-item2" onclick="change(3)">2</div>
+  		<div class="grid-item3" onclick="change(4)">3</div>  
+  		<div class="grid-item1" onclick="change(5)">4</div>
+ 		<div class="grid-item2" onclick="change(6)">5</div>
+ 		<div class="grid-item3" onclick="change(7)">6</div>  
+  		<div class="grid-item1" onclick="change(8)">7</div>
+  		<div class="grid-item2" onclick="change(9)">8</div>
+ 		<div class="grid-item3" onclick="change(10)">9</div>  
+	</div>
+    </div>
+	<script src="index.js"></script>
+</body>
+</html>
